@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    a{
+      text-decoration: none;
+    }
+    #container {
+      margin: 0 auto;
+      width: 1200px;
+      border: 1px solid black;
+    }
+    header{
+      width: 100%;
+      height: 100px;
+      background-color: blue;
+      color: white;
+    }
+    nav{
+      float:right;
+      width: 900px;
+      height: 100px;
+      padding-top: 40px;
+    }
+
+    #logo {
+      float:left;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+
+    #Menubar{
+      float: left; 
+      list-style: none;
+      position: relative
+    }
+    li{
+      display: inline-block;
+      text-align: center;
+      margin-left: 200px;
+    }
+    #se1{
+      width: 100%;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,1fr);
+      border: 1px solid black;
+    }
+    h1{
+      margin: 0 auto;
+      margin-top: 50%;
+      grid-column: 2/3;
+    }
+    #se1>h4{
+      margin: 0 auto;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    #image-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    #image-container img {
+      display: grid;;
+    }
+
+    #sel2 {
+    width: 800px;
+    margin-top: -50px;
+    margin-left: 200px;
+    background-color: rgb(96, 224, 76);
+    height: 50px;
+    display: flex;
+    } 
+
+    #date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: 0 auto;
+    } 
+
+  #date h4 {
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+  }
+  main{
+    width: 1200px;
+    height: 600px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(7,1fr);
+  }
+  h2{
+    grid-column: 2/3;
+    text-align: center;
+  }
+  main>h4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;;
+  }
+  #ad{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    text-align: center;
+  }
+  #image-container{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: center;;
+    gap: 10px;
+    width: 400px;
+    height: 220px;
+  }
+  #aim{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+  }
+  a{
+    width: 190px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  #a1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #a2{
+    grid-column: 2/3;
+    grid-column: 1/2;
+  }
+  #a3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #a4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #a5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #a6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  footer{
+    width: 1200px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+    background-color: blue;
+  }
+  footer>h4{
+    text-align: center;
+    margin-top: 100px;
+  }
+  #top{
+    font-weight: bold;
+  }
+  footer>ul{
+    margin-top: 60px;
+    text-align: center;
+  }
+  #copyright{
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgb(8, 8, 40);
+  }
+  #copyright>p{
+    padding: 15px;
+  }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div id="logo">
+        <img src="" alt="팀 로고">
+      </div>
+      <nav>
+        <ul id="Menubar">
+          <li><a href="#"></a>메인화면</li>
+          <li><a href="#"></a>세부 여행지</li>
+          <li><a href="#"></a>프로필</li>
+        </ul>
+      </nav>
+    </header>
+      <section id="se1">
+        <h1>여행 일정</h1>
+        <h4>여행을 떠나 봅시다.</h4>
+      </section>
+      <section id="sel2">
+        <div id="date">
+          <h4>일정</h4>
+          <h4>연도</h4>
+          <h4>월</h4>
+          <h4>일</h4>
+          <h4>저장</h4>
+        </div>
+      </section>
+      <main>
+        <h2>이달의 대구 여행 픽</h2>
+        <h4>The Best Place Of DAEGU</h4>
+        <div id="image-container">
+          <div id="aim">
+            <a href="#" ><img src="" alt=" 이미지1" id="a1"></a>
+            <a href="#"><img src="" alt=" 이미지2" id="a2"></a>
+            <a href="#"><img src="" alt=" 이미지3" id="a3"></a>
+            <a href="#"><img src="" alt=" 이미지4" id="a4"></a>
+            <a href="#"><img src="" alt=" 이미지5" id="a5"></a>
+            <a href="#"><img src="" alt=" 이미지6" id="a6"></a>
+          </div>
+        </div>
+        <div id="ad">
+          <h4>Discover More</h4>
+        </div>
+      </main>
+      <footer>
+        <h4>TEAM 5</h4>
+        <ul>
+          <li id="top">Team 5</li>
+          <li>YEONG BEOM KIM</li>
+          <li>JIN A KIM</li>
+          <li>JIN YOUNG PARK</li>
+        </ul>
+        <ul>
+          <li>contact us</li>
+          <li>GREENCOMPUTE 506</li>
+          <li>010-1234-5678</li>
+          <li>faer9876@naver.com</li>
+          <li><br>social media</li>
+        </ul>
+      </footer>
+      <div id="copyright">
+        <p>@copyright 2023 team 5</p>
+      </div>
+  </div>
+
+</body>
+</html>
