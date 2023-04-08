@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 1200px;
+            border: 1px solid black;
+        }
+        aside,main,footer{
+            border: 1px solid black;
+        }
+        footer{
+            width: 1200px;
+            height: 250px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            color: white;
+            background-color: #001d3d;
+        }
+        .main_area{
+            display: flex;
+        }
+        aside{
+            width:250px;
+            height: 800px;
+            display: flex;
+        }
+        main{
+            width:100%;
+        }
+        .ima_area{
+            border: 1px solid black;
+            width : 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        #chooseFile {
+            visibility: hidden;
+        }
+        .profile_img{
+            cursor: pointer;
+            display: flex;
+            margin: 10px;
+            justify-content: center;
+            /* border: 1px solid rgb(196, 226, 238); */
+            /* width: 40px; */
+            /* background-color: rgb(180, 179, 245); */
+        }
+        .profile{
+            display: flex;
+            flex-wrap: wrap;}
+        .information{
+            list-style-type: none;
+            /* line-height: 50px; */
+        }
+        .team_members{
+            list-style-type: none;
+            /* line-height: 20px; */
+        }
+        li{
+            line-height: 40px;
+        }
+        #copyright{
+            width: 1200px;
+            height: 50px;
+            text-align: center;
+            color: white;
+            background-color: #020f1d;
+        }
+        #copyright>p{
+            padding: 15px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_area">
+        <aside class="profile">
+            <form method="post" enctype="multipart/form-data">
+                <div class="ima_area"></div>
+                <label for="chooseFile" class="profile_img">사진</label>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            </form>
+            <!-- 일정 보고 입력하고 수정 삭제 하는 곳 만들기 -->
+        </aside>
+        <main>
+            <!-- 달력부분 가져와서 연결 시켜주기 -->
+            달력 넣어주기
+        </main>
+    </div>
+    <footer>
+        <h4>TEAM 5</h4>
+            <ul class = "team_members">
+            <li>Team 5</li>
+            <li>YEONG BEOM KIM</li>
+            <li>JIN YOUNG PARK</li>
+            <li>JIN A KIM</li>
+        </ul>
+        <ul class = "information">
+            <li>CONTACT US</li>
+            <li>GREENCOMPUTE 506</li>
+            <li>010-1234-5678</li>
+            <li>email</li>
+            <li>social media</li>
+        </ul>
+    </footer>
+    <div id="copyright">
+        <p>@copyright 2023 team 5</p>
+    </div>
+</body>
+</html>
